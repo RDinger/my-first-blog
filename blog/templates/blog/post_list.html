@@ -4,19 +4,17 @@
 	</head>
 	<body>
 		<div>
-			<h1>UNDER CONSTRUCTION</h1>
+			<h1>Blogs view</h1>
 		</div>
 		
-		<div>
-			<p>Publishing date: 07-01-2018 (7 jan 2018).</p>
-		</div>
+		{%for post in posts%}
+			<div>
+				<h1><a href="">{{post.title }}</a></h1>
+				<p>published: {{post.published_date }}</p>
+				<p>{{ post.text }}</p>
+			</div>
+		{% endfor %}
 		
-		<div>
-			<p>Hi there!</p>
-			<p>This page seems to be broken <br>Current environment: Local developer env</p>
-			<p></p>
-			<h3>What to do?</h3>
-			<p>Go back: <a href="https:\\duckduckgo.com">Duckduckgo.com</a>
-		</div>
+		<div> <QuerySet [<Post: My 
 	</body>
 </html>
